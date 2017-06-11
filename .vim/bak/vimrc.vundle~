@@ -1,0 +1,66 @@
+" Brief HELP of vundle
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
+ 
+" general 
+Plugin 'Townk/vim-autoclose'
+Plugin 'mileszs/ack.vim'
+Plugin 'thisivan/vim-bufexplorer' 
+""Bundle 'xolox/vim-easytags'
+""Bundle 'majutsushi/tagbar'
+""Bundle 'techlivezheng/tagbar-phpctags'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter.git'
+Plugin 'vim-scripts/YankRing.vim.git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-endwise'
+Plugin 'sukima/xmledit.git'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'Lokaltog/vim-easymotion'
+"AutoComplete & snippets
+Plugin 'Shougo/neocomplcache'
+Plugin 'Shougo/neosnippet'
+Plugin 'vim-scripts/OmniCppComplete'
+"Syntac checking for lots of languages
+"Bundle "scrooloose/syntastic"
+"File fuzzy search
+Plugin "kien/ctrlp.vim"
+
+"--------------------
+" for php
+"--------------------
+Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'arnaud-lb/vim-php-namespace'
+Plugin 'shawncplus/phpcomplete.vim'
+"Note: The follow plugin may cause wrong display of block comment
+"Bundle 'shawncplus/php.vim'
+Plugin 'vim-scripts/PDV--phpDocumentor-for-Vim'
+Plugin 'erikfercak/php-search-doc'
+Plugin 'lucapette/vim-jquery-doc'
+
+"--------------------
+" for html, haml, sass
+"--------------------
+Plugin 'concise/vim-html5-fix'
+Plugin 'tpope/vim-haml'
+
+"--------------------
+" for javascript
+"--------------------
+Plugin 'pangloss/vim-javascript'
+Plugin 'itspriddle/vim-jquery'
+"Bundle 'hallettj/jslint.vim'
+
+" non github repos
+"Bundle 'git://git.wincent.com/command-t.git'
+
+
