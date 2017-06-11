@@ -1,1 +1,1 @@
-/home/tien/vimrc/vimrc
+abc
