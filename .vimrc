@@ -1,1 +1,0 @@
-/home/tien/vimrc/vimrc
