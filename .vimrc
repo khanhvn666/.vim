@@ -15,27 +15,28 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'benmills/vimux'
 Plugin 'Yggdroot/indentLine'
-Plugin 'mhartington/oceanic-next'
 Plugin 'tpope/vim-vinegar'
 Plugin 'terryma/vim-multiple-cursors'
-Bundle 'Shougo/unite.vim'
 Bundle 'matze/vim-move'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-repeat'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'easymotion/vim-easymotion'
+
 
 call vundle#end()            " required                                         
-
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'francoiscabrol/ranger.vim'
 Plug 'haya14busa/incsearch.vim'
+Plug 'mbbill/undotree'
+Plug 'spf13/vim-autoclose'
 " Initialize plugin system
 call plug#end()
+
 filetype plugin indent on    " required
 
 " show number line
@@ -150,3 +151,15 @@ while c <= 99
   execute "nnoremap " . c . "g :" . c . "b\<CR>"
   let c += 1
 endwhile
+
+" map for undo tree
+map <leader>U :UndotreeToggle<CR>
+
+" save temp file to one place
+if has("persistent_undo")
+    set undodir=~/.undodir/
+    set undofile
+endif
+
+"set auto close tag
+let g:autoclose_vim_commentmode = 1
