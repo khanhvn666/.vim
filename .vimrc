@@ -98,6 +98,10 @@ map <C-p> :bp<CR>
 " Show ranger working directory
 map <leader>R :RangerWorkingDirectory<CR>.
 
+
+" map ctr n with next buffer
+map <C-w> :q<CR>
+
 " Vim navigator map for windown
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -166,3 +170,4 @@ endif
 
 "set auto close tag
 let g:autoclose_vim_commentmode = 1
+
