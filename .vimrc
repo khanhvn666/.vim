@@ -173,3 +173,6 @@ let g:autoclose_vim_commentmode = 1
 
 " set airline bar background color
 let g:airline_theme='base16_tomorrow'
+
+"Leader close vim 
+nmap <leader>q :q<CR>
