@@ -1,11 +1,15 @@
+"allway show status line
+set laststatus=2      
+
 set nocompatible        " be iMproved, required                           
+
 filetype off            " required
 
 "Show full path of current file
 set statusline+=%F
 
 " set save all buffer after close vim
-set viminfo^=%
+"set viminfo^=%
 
 " set the shell to zsh
 set shell=/bin/zsh
@@ -37,6 +41,7 @@ Plug 'francoiscabrol/ranger.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'mbbill/undotree'
 Plug 'spf13/vim-autoclose'
+Plug 'junegunn/heytmux'
 " Initialize plugin system
 call plug#end()
 
@@ -97,10 +102,6 @@ map <C-p> :bp<CR>
 
 " Show ranger working directory
 map <leader>R :RangerWorkingDirectory<CR>.
-
-
-" map ctr n with next buffer
-map <C-w> :q<CR>
 
 " Vim navigator map for windown
 nnoremap <C-h> <C-w>h
