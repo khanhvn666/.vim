@@ -42,6 +42,8 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'mbbill/undotree'
 Plug 'spf13/vim-autoclose'
 Plug 'junegunn/heytmux'
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
 " Initialize plugin system
 call plug#end()
 
@@ -177,3 +179,16 @@ let g:airline_theme='base16_tomorrow'
 
 "Leader close vim 
 nmap <leader>q :q<CR>
+
+
+" session management
+let g:session_directory = "~/.vim/session"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_command_aliases = 1
+
+"Leader session 
+nnoremap <leader>so :OpenSession
+nnoremap <leader>ss :SaveSession
+nnoremap <leader>sd :DeleteSession<CR>
+nnoremap <leader>sc :CloseSession<CR>
