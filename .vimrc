@@ -45,6 +45,7 @@ Plug 'junegunn/heytmux'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
 Plug 'terryma/vim-expand-region'
+Plug 'justinmk/vim-sneak'
 " Initialize plugin system
 call plug#end()
 
