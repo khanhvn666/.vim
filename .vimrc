@@ -44,6 +44,7 @@ Plug 'spf13/vim-autoclose'
 Plug 'junegunn/heytmux'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
+Plug 'terryma/vim-expand-region'
 " Initialize plugin system
 call plug#end()
 
@@ -192,3 +193,7 @@ nnoremap <leader>so :OpenSession
 nnoremap <leader>ss :SaveSession
 nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
+
+"map expand highlight 
+map K <Plug>(expand_region_expand)
+map J <Plug>(expand_region_shrink)
