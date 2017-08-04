@@ -46,6 +46,7 @@ Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
 Plug 'terryma/vim-expand-region'
 Plug 'justinmk/vim-sneak'
+Plug 'mhinz/vim-startify'
 " Initialize plugin system
 call plug#end()
 
