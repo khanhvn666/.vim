@@ -23,7 +23,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'benmills/vimux'
 Plugin 'Yggdroot/indentLine'
 Plugin 'tpope/vim-vinegar'
-Plugin 'terryma/vim-multiple-cursors'
+"Plugin 'terryma/vim-multiple-cursors'
 Bundle 'matze/vim-move'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
@@ -37,14 +37,13 @@ call vundle#end()            " required
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'francoiscabrol/ranger.vim'
+"Plug 'francoiscabrol/ranger.vim'
 Plug 'haya14busa/incsearch.vim'
 Plug 'mbbill/undotree'
 Plug 'spf13/vim-autoclose'
 Plug 'junegunn/heytmux'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
-Plug 'terryma/vim-expand-region'
 Plug 'justinmk/vim-sneak'
 Plug 'mhinz/vim-startify'
 " Initialize plugin system
@@ -96,14 +95,6 @@ map <Leader>H :History!<CR>
 "Map leader command 
 nmap <leader>L :Lines!<CR>
 "
-"Leader buffer 
-nmap <leader>B :Buffers!<CR>
-
-" map ctr n with next buffer
-map <C-n> :bn<CR>
-
-" map ctr n with next buffer
-map <C-p> :bp<CR>
 
 " Show ranger working directory
 map <leader>R :RangerWorkingDirectory<CR>.
@@ -158,13 +149,6 @@ set autoread
 au CursorHold * checktime    
 
 
-" Ngb to jump to buffer number N 
-let c = 1
-while c <= 99
-  execute "nnoremap " . c . "g :" . c . "b\<CR>"
-  let c += 1
-endwhile
-
 " map for undo tree
 map <leader>U :UndotreeToggle<CR>
 
@@ -196,6 +180,11 @@ nnoremap <leader>ss :SaveSession
 nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
-"map expand highlight 
-map K <Plug>(expand_region_expand)
-map J <Plug>(expand_region_shrink)
+"Leader buffer 
+nnoremap <leader>B :Buffers!<CR>
+
+" map ctr n with next buffer
+nnoremap <C-n> :bn<CR>
+
+" map ctr n with next buffer
+nnoremap <C-p> :bp<CR>
